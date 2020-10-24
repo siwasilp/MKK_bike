@@ -40,6 +40,6 @@ void sen11()
     diff1 = (time_21 - time_11);
     vel1 = wid1 / diff1;
     tnet1 = (konst1 * rad1) / vel1;
-    rpm1 = (60000) / tnet1;
+    rpm1 = (30000) / tnet1 * 10;//---------------
   }
 }

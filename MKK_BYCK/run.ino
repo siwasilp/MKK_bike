@@ -18,7 +18,7 @@ void controlCompII() {
     lcd.print("[-]");
     Keyboard.press('-');
     Keyboard.releaseAll();
-    delay(100);
+    delay(200); //ปั่นเร็วขึ้นให้ลด
     ss = 1;
   }
 
@@ -28,16 +28,16 @@ void controlCompII() {
     lcd.print("[+]");
     Keyboard.press('+');
     Keyboard.releaseAll();
-    delay(1200);
+    delay(600);   //ปั่นเร็วขึ้นให้ลด
     ss = 1;
   }
 
-  if (ss == 0) {
+  if (ss == 0) {  
     lcd.setCursor(13, 0);
     lcd.print("[.]");
     Keyboard.press('-');
     Keyboard.releaseAll();
-    delay(1500);
+    delay(200); //ค่อยๆ หยุดให้เพิ่ม
   }
 
   if ((int)vprevious == (int)mph) //do nothing

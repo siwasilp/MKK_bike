@@ -1,13 +1,14 @@
-#define INTERVAL_MESSAGE1 1200 //5วินาที
+//----------------
+#define INTERVAL_MESSAGE1 1500 //5วินาที
 #define INTERVAL_MESSAGE2 800 //7วินาที
 #define INTERVAL_MESSAGE3 1000 //11วินาที
 #define INTERVAL_MESSAGE4 1500 //13วินาที
- 
+
 unsigned long time_x = 0;
 unsigned long time_y = 0;
 unsigned long time_3 = 0;
 unsigned long time_4 = 0;
- 
+
 void print_time(unsigned long time_millis);
 
 
@@ -59,59 +60,56 @@ void setup() {
   pinMode(sen1, INPUT);
   lcd.init();
   lcd.backlight();
-   lcd.clear();
+  lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("Nurs"); delay(120);
-  lcd.print("ing"); delay(120);
-  lcd.print("_"); delay(120);
-  lcd.print("Sci"); delay(120);
-  lcd.print("ence."); delay(120);
-  lcd.setCursor(0, 1);
-  lcd.print("K"); delay(120);
-  lcd.print("K"); delay(120);
-  lcd.print("U"); delay(120);
-  lcd.print("_"); delay(120);
-  lcd.print("E"); delay(120);
-  lcd.print("x"); delay(120);
-  lcd.print("e"); delay(120);
-  lcd.print("r"); delay(120);
-  lcd.print("c"); delay(120);
-  lcd.print("i"); delay(120);
-  lcd.print("s"); delay(120);
-  lcd.print("e"); delay(120);
-  lcd.print(" "); delay(120);
-  lcd.print("V"); delay(120);
-  lcd.print("."); delay(120);
-  lcd.print("1"); delay(120);
 
+  lcd.print(" Tra"); delay(150);
+  lcd.print("vel"); delay(150);
+  lcd.print("_"); delay(150);
+  lcd.print("Bi"); delay(150);
+  lcd.print("King."); delay(150);
+  lcd.setCursor(1, 1);
+  lcd.print("N"); delay(150);
+  lcd.print("U"); delay(150);
+  lcd.print("_"); delay(150);
+  lcd.print("4"); delay(150);
+  lcd.print("7"); delay(150);
+  lcd.print(" "); delay(150);
+  lcd.print("K"); delay(150);
+  lcd.print("K"); delay(150);
+  lcd.print("U"); delay(150);
+  lcd.print("#"); delay(150);
+  lcd.print("5"); delay(150);
+  lcd.print("4"); delay(150);
+  //----
   lcd.setCursor(0, 0);
-  lcd.print("Nursing_Science.");
+  lcd.print(" Travel_Biking ");
   lcd.setCursor(0, 1);
-  lcd.print("KKU_Exercise V.1"); delay(500);
+  lcd.print(" NU_47 KKU #54 "); delay(500);
   lcd.setCursor(0, 0);
   lcd.print("                ");
   lcd.setCursor(0, 1);
   lcd.print("                ");  delay(200);
   lcd.setCursor(0, 0);
-  lcd.print("Nursing_Science.");;
+  lcd.print(" Travel_Biking ");
   lcd.setCursor(0, 1);
-  lcd.print("KKU_Exercise V.1"); delay(500);
+  lcd.print(" NU_47 KKU #54 ");  delay(500);
   lcd.setCursor(0, 0);
   lcd.print("                ");
   lcd.setCursor(0, 1);
   lcd.print("                ");  delay(200);
   lcd.setCursor(0, 0);
-  lcd.print("Nursing_Science.");;
+  lcd.print(" Travel_Biking ");
   lcd.setCursor(0, 1);
-  lcd.print("KKU_Exercise V.1"); delay(500);
+  lcd.print(" NU_47 KKU #54 ");  delay(500);
   lcd.setCursor(0, 0);
   lcd.print("                ");
   lcd.setCursor(0, 1);
   lcd.print("                ");  delay(200);
   lcd.setCursor(0, 0);
-  lcd.print("Nursing_Science.");;
+  lcd.print(" Travel_Biking ");
   lcd.setCursor(0, 1);
-  lcd.print("KKU_Exercise V.1"); delay(500);
+  lcd.print(" NU_47 KKU #54 ");  delay(500);
   delay(3000);
   lcd.clear();
 }
@@ -119,7 +117,7 @@ int button_old = 0;
 
 
 void loop() {
-  
+
   read_in();
   if (button != button_old) {
     Keyboard.press('z');
